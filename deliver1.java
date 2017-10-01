@@ -32,7 +32,7 @@ public class deliver1 {
 		}
 		if (secondEntry > 0) {
 
-			// this checks if the digits are the the correct length and positive
+			// this checks if the digits are the the correct length
 			if ((Integer.toString(firstEntry).length() == 3) && (Integer.toString(secondEntry).length() == 3)) {
 				message = matchDigits(firstEntry, secondEntry);
 			}
