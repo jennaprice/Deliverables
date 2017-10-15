@@ -12,8 +12,12 @@ public class deliverable2 {
 		Scanner scnr = new Scanner(System.in);
 		boolean playing = true;
 		String answer = "";
+
+		// run over and over to test different scenarios
 		while (playing) {
 			System.out.println("This is a program that calculates the amount of time between two dates. ");
+
+			// these try /catch blocks detect invalid input
 			try {
 				System.out.println("Please enter your first date in the format: yyyy mm dd");
 				firstDate = LocalDate.of(scnr.nextInt(), scnr.nextInt(), scnr.nextInt());
@@ -40,6 +44,7 @@ public class deliverable2 {
 			} catch (Exception e) {
 				System.out.println("Please make sure you entered the appropriate value.");
 			}
+			// technically anything starting with y will continue the loop
 			if (answer.charAt(0) != 'y') {
 				playing = false;
 			}
